@@ -18,6 +18,7 @@ You can refer to the following materials in order to familiarize with OCCI-Studi
 </ol>
 
 # Generate the simulation configuration:
+* Pealse refer to this video,<a href=https://www.youtube.com/watch?v=4YdxLQ3XQXo">here</a>, to generate the simulation configuration.
 <ol>
   <li>Run the simulaton designer</li>
   <li>Design your simulation configuration</li>
