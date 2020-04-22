@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="ASCII"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2015-2017 Obeo, Inria&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA;&#x9;&#xA;Contributors:&#xA;- William Piers &lt;william.piers@obeo.fr>&#xA;- Philippe Merle &lt;philippe.merle@inria.fr>&#xA;- Faiez Zalila &lt;faiez.zalila@inria.fr>" modelDirectory="/OcciSimulation/src-gen" editDirectory="/OcciSimulation.edit/src-gen" editorDirectory="/OcciSimulation.editor/src-gen" modelPluginID="OcciSimulation" modelName="Simulation" testsDirectory="/OcciSimulation.tests/src" complianceLevel="8.0" copyrightFields="false" editPluginID="OcciSimulation.edit" editorPluginID="OcciSimulation.editor" testsPluginID="OcciSimulation.tests" operationReflection="true">
+  <genAnnotations source="http://www.eclipse.org/OCL/GenModel">
+    <details key="Use Delegates" value="false"/>
+  </genAnnotations>
+  <foreignModel>simulation.ecore</foreignModel>
+  <genPackages prefix="Simulation" basePackage="occ" disposableProviderFactory="true">
+    <ecorePackage href="simulation.ecore#/"/>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="simulation.ecore#//ElasticityType"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//ElasticityType/None"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//ElasticityType/Vertical"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//ElasticityType/Horizontal"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="simulation.ecore#//CloudletScheduler"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//CloudletScheduler/CloudletSchedulerSpaceShared"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//CloudletScheduler/CloudletSchedulerTimeShared"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="simulation.ecore#//utilizationModel"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//utilizationModel/UtilizationModelFull"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//utilizationModel/UtilizationModelNull"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//utilizationModel/UtilizationModelPlanetLabInMemory"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//utilizationModel/UtilizationModelStochastic"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="simulation.ecore#//VmScheduler"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//VmScheduler/VmSchedulerSpaceShared"/>
+      </genEnumLiterals>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//VmScheduler/VmSchedulerTimeShared"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="simulation.ecore#//PeProvisionner"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//PeProvisionner/PeProvisionerSimple"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="simulation.ecore#//RamProvisionner"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//RamProvisionner/RamProvisionerSimple"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false">
+      <ecoreEnum href="simulation.ecore#//BwProvisionner"/>
+      <genEnumLiterals>
+        <ecoreEnumLiteral href="simulation.ecore#//BwProvisionner/BwProvisionerSimple"/>
+      </genEnumLiterals>
+    </genEnums>
+    <genDataTypes>
+      <ecoreDataType href="simulation.ecore#//double"/>
+    </genDataTypes>
+    <genDataTypes>
+      <ecoreDataType href="simulation.ecore#//Long"/>
+    </genDataTypes>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Datacenter"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Datacenter/datacenterOs"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Datacenter/datacenterLocation"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Datacenter/datacenterTimezone"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Datacenter/datacenterCostMem"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Datacenter/datacenterCostBw"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Datacenter/datacenterCostStorge"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Datacenter/datacenterCostProcess"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Datacenter/datacenterVmm"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Datacenter/datacenterName"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Vm"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmId"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmMips"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmCores"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmImageSize"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmBw"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmRam"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmOs"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmCloudletScheduler"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmElasticity"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Vm/vmVmm"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Host"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostId"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostRamProvisionner"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostBwProvisionner"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostStorage"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostCores"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostVmScheduler"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostRam"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostMips"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostBw"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostPeProvisionner"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Host/hostElasticity"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Cloudlet"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Cloudlet/cloudletId"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Cloudlet/cloudletLength"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Cloudlet/cloudletCores"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Cloudlet/cloudletFileSize"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Cloudlet/cloudletOutputSize"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Cloudlet/cloudletUtilizationModelCpu"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Cloudlet/cloudletUtilizationModelRam"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Cloudlet/cloudletUtilizationModelBw"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Harddrive"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Sanstorage"/>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Sanstorage/bandwith"/>
+      </genFeatures>
+      <genFeatures createChild="false">
+        <ecoreFeature xsi:type="ecore:EAttribute" href="simulation.ecore#//Sanstorage/latency"/>
+      </genFeatures>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Pricestrategy"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Spot"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Ondemand"/>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="simulation.ecore#//Upfront"/>
+    </genClasses>
+  </genPackages>
+  <usedGenPackages href="platform:/plugin/org.eclipse.cmf.occi.infrastructure/model/Infrastructure.genmodel#//infrastructure"/>
+  <usedGenPackages href="platform:/plugin/org.eclipse.cmf.occi.core/model/OCCI.genmodel#//occi"/>
+</genmodel:GenModel>

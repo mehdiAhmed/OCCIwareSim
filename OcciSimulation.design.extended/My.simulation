@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:occi="http://schemas.ogf.org/occi/core/ecore" xmlns:simulation="http://schemas.ogf.org/occi/simulation/ecore">
+  <use href="http://schemas.ogf.org/occi/core#/"/>
+  <use href="http://schemas.ogf.org/occi/simulation#/"/>
+  <resources xsi:type="simulation:Datacenter" id="urn:uuid:0d4b052f-4b14-4ab4-81df-888bcd2479fe" title="datacenter1">
+    <kind href="http://schemas.ogf.org/occi/simulation#//@kinds[term='datacenter']"/>
+    <links id="urn:uuid:1d45b361-4ce1-4799-9c5d-91b4fffa5ea9" target="//@resources.1">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+  </resources>
+  <resources xsi:type="simulation:Host" id="urn:uuid:3dd40972-a5b1-490e-8b46-d64ac0496099" title="host2" rlinks="//@resources.0/@links.0">
+    <kind href="http://schemas.ogf.org/occi/simulation#//@kinds[term='host']"/>
+    <links id="urn:uuid:36607aba-fdc3-466a-b523-af27d42e44ed" target="//@resources.2">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+  </resources>
+  <resources xsi:type="simulation:Vm" id="urn:uuid:e17f6d96-02c1-4938-baa0-3984c477cf9a" title="vM3" rlinks="//@resources.1/@links.0">
+    <kind href="http://schemas.ogf.org/occi/simulation#//@kinds[term='vm']"/>
+    <links id="urn:uuid:e039f3d9-4a76-4630-9ea5-5c5fd2758dd9" target="//@resources.3">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+    <links id="urn:uuid:92ceb56a-aaa5-4501-9a9b-f7939f32048a" target="//@resources.4">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+  </resources>
+  <resources xsi:type="simulation:Cloudlet" id="urn:uuid:ff415a83-f16f-43a9-b57a-e4d6a8dc80da" title="cloudlet4" rlinks="//@resources.2/@links.0">
+    <kind href="http://schemas.ogf.org/occi/simulation#//@kinds[term='cloudlet']"/>
+  </resources>
+  <resources xsi:type="simulation:Cloudlet" id="urn:uuid:daec4e51-54f5-4174-babb-76b66461a868" title="cloudlet5" rlinks="//@resources.2/@links.1">
+    <kind href="http://schemas.ogf.org/occi/simulation#//@kinds[term='cloudlet']"/>
+  </resources>
+</occi:Configuration>
